@@ -6,6 +6,71 @@
 
 <title>고도연 : 뱅앤올룹슨 (1440)</title>
 
+<script src="https://code.jquery.com/jquery-latest.js"></script> 
+ 
+<style>
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 3; /* Sit on top */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+	}
+
+	/* Modal Content/Box */
+	.modal-content {
+		background-color: #fefefe;
+		margin: 15% auto; /* 15% from the top and centered */
+		padding: 20px;
+		border: 1px solid #888;
+		width: 25%; /* Could be more or less, depending on screen size */       
+		border-radius: 15px;                   
+	}
+
+
+</style>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+			<p style="text-align: center;"><img src="img/bang_olufsen_logo.png" alt="뱅엔올룹슨 로고"></p>
+			<p style="text-align: center; line-height: 1.5;"><br /></p>
+			<p style="text-align: center; line-height: 1.5;"><span style="font-size: 16pt;">본 사이트는 <b>1920*1080</b>의 </span></p>
+			<p style="text-align: center; line-height: 1.5;"><span style="font-size: 16pt;"><b>Chrome PC화면</b>에 최적화되어 있습니다.</span></p>
+			<p style="text-align: center; line-height: 1.5;"><br /></p>
+		<div style="cursor:pointer;background-color:#231d1f;text-align: center;padding-bottom: 18px;padding-top: 18px; border-radius:30px" onClick="close_pop();">
+			<span class="pop_bt" style="font-size: 14pt;color:white" >
+				 사 이 트 보 기
+			</span>
+		</div>
+  </div>
+
+</div>
+	<!--End Modal-->
+
+
+<script type="text/javascript">
+  
+	jQuery(document).ready(function() {
+			$('#myModal').show();
+	});
+	//팝업 Close 기능
+	function close_pop(flag) {
+		 $('#myModal').hide();
+	};
+	
+</script>
+
+
 <style>
 /*풀 동영상 인트로 섹션 시작*/
 #intro {position:relative; width:100%; height:980px; margin:0 auto; overflow:hidden;}
